@@ -1,0 +1,47 @@
+.body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+}
+
+.nav-link.scrolled {
+  color: black;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: black;
+}

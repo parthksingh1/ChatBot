@@ -1,0 +1,380 @@
+/* home.css */
+
+.hero-section {
+  position: relative;
+  background-image: url('/src/assests/pexels-patricia-luquet-17869859.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+
+.big-box {
+  background-image: url('/src/assests/pexels-bri-schneiter-346529.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 50px;
+  color: #fff;
+}
+
+.left-side {
+  position: relative;
+  width: 50%;
+}
+
+.left-side img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.right-side {
+  width: 50%;
+  backdrop-filter: blur(1.9px);
+  background-color: rgba(255, 255, 255, 0.314);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.big-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.big-box p {
+  font-size: 1.2rem;
+}
+
+.big-box p.contact-info {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+
+.places-section {
+  background-color: #f9f9f9; 
+  padding: 80px 0; 
+  text-align: center;
+  color: #333; 
+}
+
+.places-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #0066cc;
+  text-transform: uppercase; 
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  margin-top: 30px; 
+}
+
+.card {
+  width: 350px; 
+  border: 2px solid #ddd; 
+  border-radius: 12px; 
+  overflow: hidden;
+  margin: 20px; 
+}
+
+.card img {
+  width: 100%;
+  height: 220px; 
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px; 
+}
+
+.card p {
+  margin: 0 15px 15px; 
+}
+
+.purpose-section {
+  background-color: #e6f7ff; 
+  padding: 80px 0; 
+  text-align: center;
+  color: #0056b3;
+}
+
+.purpose-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #0056b3;
+  text-transform: uppercase;
+}
+
+.pillar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.pillar {
+  width: 350px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.pillar h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.pillar p {
+  font-size: 1.2rem;
+}
+
+
+.latest-news-section {
+  background-color: #fff; 
+  padding: 80px 0;
+  text-align: center;
+  color: #333;
+}
+
+.latest-news-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #0056b3;
+  text-transform: uppercase;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.news-card {
+  width: 350px;
+  height: 400px; 
+  perspective: 1000px; 
+}
+
+.news-front,
+.news-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.news-front {
+  transition: transform 0.5s;
+}
+
+.news-card:hover .news-front {
+  transform: rotateY(180deg); 
+}
+
+.news-back {
+  transform: rotateY(180deg);
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 20px;
+  color: #333; 
+  backface-visibility: hidden; 
+}
+
+.news-back p {
+  font-size: 1.2rem;
+}
+
+.news-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-card h3 {
+  margin: 15px;
+  font-size: 1.8rem;
+}
+
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; 
+}
+
+.chatbot-button button {
+  padding: 10px;
+  background-color: lightskyblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-button {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chat-button button {
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: lightskyblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+
+.chat-button img,
+.chatbot-button img {
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.chat-button button,
+.chatbot-button button {
+  padding: 10px;
+  background-color: lightskyblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* ... (Ganga Deatil Section) */
+
+.details-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/src/assests/creative-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+  color: #333;
+}
+
+.details-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #0056b3;
+  text-transform: uppercase;
+}
+
+.details-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.details-content p {
+  width: 48%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.details-content p:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.details-content span {
+  font-size: 2rem;
+  color: #0056b3;
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.details-content p:hover span {
+  transform: rotate(360deg);
+}
+
+
+.details-content p::before {
+  content: "\2022";
+  font-size: 1.5rem;
+  color: #0056b3;
+  margin-right: 10px;
+}
+
+
+.details-content .water-flow::before {
+  content: "\2600"; 
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-right: 10px;
+}
+
+
+.details-content .flora-fauna::before {
+  content: "\1F33F"; 
+  font-size: 1.8rem;
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+

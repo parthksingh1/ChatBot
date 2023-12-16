@@ -1,7 +1,10 @@
 // src/components/Navbar.tsx
 import React from 'react';
 import '../components/Navbar.css';
-import Logo from '../assests/nmcgGif 2.png'; // Import your logo
+import Logo from '../assests/nmcgGif 2.png';
+import Gallery from '../pages/gallery';
+import About from '../pages/About';
+import Home from '../pages/Home';
 
 const Navbar: React.FC = () => {
   return (
@@ -14,16 +17,16 @@ const Navbar: React.FC = () => {
 
         {/* Navigation Links */}
         <div className="nav-links">
-          <a href="#" className="nav-link">
+          <a href="/Home" className="nav-link">
             Home
           </a>
-          <a href="#" className="nav-link">
+          <a href="/About" className="nav-link">
             About
           </a>
           <a href="/Donation" className="nav-link">
             Donation
           </a>
-          <a href="#" className="nav-link">
+          <a href="/Gallery" className="nav-link">
             Gallery
           </a>
         </div>

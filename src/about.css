@@ -1,0 +1,61 @@
+/* about.css */
+
+body {
+  margin: 0;
+  background-color: #ffd659; /* Light yellow background for the entire page */
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 30%; /* Adjust the maximum width of the small image container */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add a border-radius for a rounded image */
+}
+
+.information-container {
+  flex: 1;
+  padding: 20px; /* Add some padding for better readability */
+}
+
+.text-3xl {
+  font-size: 3rem; /* Increase font size to 3xl */
+  color: #333; /* Darken text color */
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem; /* Slightly increase margin-bottom */
+}
+
+.list-disc {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+/* Add more styles as needed */

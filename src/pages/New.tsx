@@ -1,39 +1,47 @@
-// src/New.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../New.css';
-import namamigange from '../assests/namamigange.png';
-import chatbot from '../assests/chatbot 3 1.png';
-import donation from '../assests/donation.jpg';
-
+import domain from '../assests/domain 1.png';
+import heart from '../assests/heart 1.png';
+import virtualreality from '../assests/virtual-reality 1.png';
+import Frame from '../assests/Frame 95 1.png';
 
 const New: React.FC = () => {
     return (
-        <div
-            className="h-screen bg-cover bg-center flex items-center"
-            style={{ backgroundImage: 'url(https://t4.ftcdn.net/jpg/00/52/13/03/360_F_52130317_5uhFeokyuf9WOiOHewk4YPTMIe7G6b51.jpg)' }}
-        >
-            <div className="container mx-auto text-center">
-                <h1 className="heading">Welcome to Namami Gange</h1>
-                <div className="flex justify-center space-x-4">
-                    {/* Card 1 */}
-                    <Link to="/home" className="card">
-                        <img src={namamigange} alt="Card 1" className="card-image" />
-                        <div className="overlay">Namami Gange Website</div>
-                    </Link>
+        <div className="h-screen bg-cover bg-center flex flex-col items-center">
 
-                    {/* Card 2 */}
-                    <Link to="/card2" className="card">
-                        <img src={chatbot} alt="Card 2" className="card-image" />
-                        <div className="overlay">Chacha Chaudhary ChatBot</div>
-                    </Link>
+            <div className="flex space-x-4">
+                {/* Card 1 */}
+                <Link to="/home" className="newcard">
+                    <div className="newcard-content">
+                        <img src={domain} alt="Card 1" className="newcard-image" />
+                        <p>Namami Gange Website</p>
+                    </div>
+                </Link>
 
-                    {/* Card 3 */}
-                    <Link to="/card3" className="card">
-                        <img src={donation} alt="Card 3" className="card-image" />
-                        <div className="overlay">Donation</div>
-                    </Link>
-                </div>
+                {/* Card 2 */}
+                <Link to="/card2" className="newcard">
+                    <div className="newcard-content">
+                        <img src={Frame} alt="Card 2" className="newcard-image" />
+                        <p>Chat With Chatty Chacha chuadhary</p>
+                    </div>
+                </Link>
+
+                {/* Card 3 */}
+                <Link to="/card3" className="newcard">
+                    <div className="newcard-content">
+                        <img src={heart} alt="Card 3" className="newcard-image" />
+                        <p>Donate for safe and clean ganga</p>
+                    </div>
+                </Link>
+
+                {/* Card 4 */}
+                <a href="https://shreyans2004.github.io/competetive-programming-part6/" className="newcard" target="_blank" rel="noopener noreferrer">
+                    <div className="newcard-content">
+                        <img src={virtualreality} alt="Card 4" className="newcard-image" />
+                        <p>Virtual Tour</p>
+                    </div>
+                </a>
             </div>
         </div>
     );

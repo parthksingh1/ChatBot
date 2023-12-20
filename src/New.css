@@ -1,0 +1,53 @@
+/* New.css */
+
+.h-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../src/assests/newnewbg.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+.newcard {
+  flex: 1;
+  max-width: 250px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin: 26rem 1rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  border: 4px solid #bcbcbc;
+  transition: transform 0.3s ease-in-out;
+}
+
+.newcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.newcard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newcard-image {
+  width: 50%; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 50% 50% 0 0;
+}
+
+.newcard-content p {
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
